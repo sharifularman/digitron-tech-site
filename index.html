@@ -14,7 +14,7 @@
 <body>
     <!-- navbar menu goes here -->
 
-    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded">
+    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded-xl">
         <div class="container flex flex-wrap justify-between items-center mx-auto">
             <a href="index.html" class="flex items-center">
                 <span class="self-center text-purple-500 text-2xl font-bold whitespace-nowrap ">Digitron</span>
@@ -65,6 +65,58 @@
             </div>
         </div>
     </nav>
+
+    <!-- hero section carousel goes here -->
+    
+<div id="animation-carousel" class="relative mx-16 my-8" data-carousel="static">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden rounded-lg md:h-screen">
+         <!-- Item 1 -->
+        <div class="hidden duration-200 ease-linear absolute inset-0 transition-all transform" data-carousel-item="">
+            <img src="images/cover/cover-3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 bg-gradient-to-r from-violet-500 to-fuchsia-500 " alt="girl-1">
+            <span class="absolute top-1/2 left-1/2 text-sm font-normal text-white -translate-x-1/2 -translate-y-1/2  dark:text-gray-800">
+                <h1 class="text-md sm:text-3xl md:text-6xl font-bold">Get Started Digital Learning</h1>
+                <p class="text-sm sm:text-xl mt-4 overflow-hidden text-ellipsis whitespace-nowrap w-20 sm:w-96 md:w-96">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio a nesciunt tempora molestias debitis fugit corrupti inventore modi, provident, magnam eveniet temporibus ullam soluta odio autem doloribus. Labore, amet praesentium.</p>
+                <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-lg px-8 py-2 sm:py-3 mr-2 my-5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Get Started</button>
+            </span>
+        </div>
+        <!-- Item 2 -->
+        <div class="duration-200 ease-linear absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
+            <img src="images/cover/cover-2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <span class="absolute top-1/2 left-1/2 text-sm font-normal text-white -translate-x-1/2 -translate-y-1/2  dark:text-gray-800">
+                <h1 class="text-md sm:text-3xl md:text-6xl font-bold">Get Started Digital Learning</h1>
+                <p class="text-sm sm:text-xl mt-4 overflow-hidden text-ellipsis whitespace-nowrap w-20 sm:w-96 md:w-96">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio a nesciunt tempora molestias debitis fugit corrupti inventore modi, provident, magnam eveniet temporibus ullam soluta odio autem doloribus. Labore, amet praesentium.</p>
+                <button type="button" class="text-white bg-purple-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-lg px-8 py-2 sm:py-3 mr-2 my-5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Get Started</button>
+            </span>
+        </div>
+        <!-- Item 3 -->
+        <div class="duration-200 ease-linear absolute inset-0 transition-all transform translate-x-0 z-20" data-carousel-item="active">
+            <img src="images/cover/cover-1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <span class="absolute top-1/2 left-1/2 text-sm font-normal text-white -translate-x-1/2 -translate-y-1/2  dark:text-gray-800">
+                <h1 class="text-md sm:text-3xl md:text-6xl font-bold">Get Started Digital Learning</h1>
+                <p class="text-sm sm:text-xl mt-4 overflow-hidden text-ellipsis whitespace-nowrap w-20 sm:w-96 md:w-96">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio a nesciunt tempora molestias debitis fugit corrupti inventore modi, provident, magnam eveniet temporibus ullam soluta odio autem doloribus. Labore, amet praesentium.</p>
+                <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-lg px-8 py-2 sm:py-3 mr-2 my-5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Get Started</button>
+            </span>
+        </div>
+        
+    </div>
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next="">
+        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev="">
+        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+</div>
+
+    
+
 
     <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
 </body>
